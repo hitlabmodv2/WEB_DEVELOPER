@@ -51,6 +51,24 @@
             font-weight: 400;
         }
 
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: #9ca3af;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
+            transform: translateY(-2px);
+        }
+
         .card {
             background: #1a1a1a;
             border-radius: 10px;
@@ -250,6 +268,20 @@
             <img src="https://avatars.githubusercontent.com/u/154863645?v=4" alt="I Putu Indrawan" class="profile-image">
             <h1>I Putu Indrawan</h1>
             <p class="title">Prompt Engineer</p>
+            <div class="social-links">
+                <a href="mailto:your-email@example.com" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/siputzx" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/your-handle" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
 
         <div class="card">

@@ -7,6 +7,7 @@ Website portfolio sederhana yang menampilkan profil I Putu Indrawan (Prompt Engi
 - `index.html` - Halaman utama website dengan desain lengkap
 - `server.js` - Simple HTTP server untuk menjalankan website
 - `package.json` - Konfigurasi Node.js project
+- `favicon.png` - Icon tab browser dengan tema coding purple
 
 ## Fitur Website
 - Profil lengkap dengan foto
@@ -14,6 +15,7 @@ Website portfolio sederhana yang menampilkan profil I Putu Indrawan (Prompt Engi
 - Informasi personal
 - Daftar skills
 - Portfolio projects dengan links
+- Favicon custom dengan tema purple coding
 
 ## Teknologi
 - HTML5
@@ -33,3 +35,4 @@ Website sudah berjalan otomatis dengan workflow yang sudah dikonfigurasi. Server
 
 ## Recent Changes
 - 2025-11-10: Website dibuat dengan desain yang sama seperti siputzx.my.id
+- 2025-11-10: Ditambahkan favicon custom dengan tema coding purple untuk tab browser

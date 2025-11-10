@@ -27,6 +27,7 @@
             color: #e0e0e0;
             position: relative;
             transition: background-image 1s ease-in-out;
+            -webkit-overflow-scrolling: touch;
         }
 
         body::before {
@@ -93,14 +94,15 @@
         }
 
         .card {
-            background: rgba(26, 26, 26, 0.6);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 12px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            will-change: auto;
         }
 
         h2 {
@@ -117,9 +119,7 @@
         }
 
         .online-identities a {
-            background: rgba(45, 45, 45, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(45, 45, 45, 0.9);
             color: #e0e0e0;
             padding: 5px 12px;
             border-radius: 5px;
@@ -146,9 +146,7 @@
         }
 
         .info-badge {
-            background: rgba(45, 45, 45, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(45, 45, 45, 0.9);
             padding: 6px 10px;
             border-radius: 5px;
             color: #e0e0e0;
@@ -171,9 +169,7 @@
         }
 
         .skill-tag {
-            background: rgba(45, 45, 45, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(45, 45, 45, 0.9);
             color: #e0e0e0;
             padding: 5px 10px;
             border-radius: 5px;
@@ -196,9 +192,7 @@
         }
 
         .project-item {
-            background: rgba(45, 45, 45, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(45, 45, 45, 0.9);
             padding: 12px;
             margin-bottom: 8px;
             border-radius: 6px;

@@ -509,28 +509,45 @@
             document.getElementById('datetime').textContent = dateTimeString;
         }
 
-        function updateBackground() {
+        function isMobileDevice() {
+            return window.innerWidth <= 768;
+        }
+
+        function getTimeBasedBackground() {
             const now = new Date();
             const hour = now.getHours();
-            let backgroundImage;
 
             if (hour >= 5 && hour < 12) {
-                backgroundImage = 'backgrounds/morning.png';
+                return 'morning.png';
             } else if (hour >= 12 && hour < 17) {
-                backgroundImage = 'backgrounds/afternoon.png';
+                return 'afternoon.png';
             } else if (hour >= 17 && hour < 20) {
-                backgroundImage = 'backgrounds/evening.png';
+                return 'evening.png';
             } else {
-                backgroundImage = 'backgrounds/night.png';
+                return 'night.png';
             }
+        }
+
+        function updateBackground() {
+            const isMobile = isMobileDevice();
+            const backgroundName = getTimeBasedBackground();
+            const folderPath = isMobile ? 'backgrounds/mobile/' : 'backgrounds/';
+            const backgroundImage = folderPath + backgroundName;
 
             document.body.style.backgroundImage = `url('${backgroundImage}')`;
+            
+            console.log(`Background updated: ${isMobile ? 'Mobile' : 'Desktop'} - ${backgroundName}`);
         }
 
         updateDateTime();
         updateBackground();
+        
         setInterval(updateDateTime, 1000);
         setInterval(updateBackground, 60000);
+
+        window.addEventListener('resize', function() {
+            updateBackground();
+        });
     </script>
 </body>
 </html>

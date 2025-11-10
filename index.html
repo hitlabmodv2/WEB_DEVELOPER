@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Siputzx</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            min-height: 100vh;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #667eea;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #ffffff;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: 1em;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.1em;
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .online-identities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .online-identities a {
+            background: #2d2d2d;
+            color: #e0e0e0;
+            padding: 6px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+
+        .online-identities a:hover {
+            background: #3d3d3d;
+        }
+
+        .about {
+            line-height: 1.6;
+            color: #b0b0b0;
+            font-size: 0.9em;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .info-badge {
+            background: #2d2d2d;
+            padding: 8px 12px;
+            border-radius: 6px;
+            color: #e0e0e0;
+            font-size: 0.85em;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-badge i {
+            color: #9ca3af;
+            font-size: 0.9em;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #2d2d2d;
+            color: #e0e0e0;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: 400;
+        }
+
+        .project-item {
+            background: #2d2d2d;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-item h3 {
+            color: #ffffff;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .project-item h3 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .project-item h3 a:hover {
+            color: #667eea;
+        }
+
+        .project-item p {
+            color: #9ca3af;
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <img src="https://avatars.githubusercontent.com/u/154863645?v=4" alt="I Putu Indrawan" class="profile-image">
+            <h1>I Putu Indrawan</h1>
+            <p class="title">Prompt Engineer</p>
+        </div>
+
+        <div class="card">
+            <h2>Online Identities</h2>
+            <div class="online-identities">
+                <a href="https://github.com/siputzx" target="_blank">Siputzx</a>
+                <a href="https://github.com/qanypaw" target="_blank">Qanypaw</a>
+                <a href="https://github.com/putuofc" target="_blank">Putuofc</a>
+                <a href="https://github.com/nawdev" target="_blank">Nawdev</a>
+                <a href="https://github.com/monlify" target="_blank">Monlify</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>About</h2>
+            <p class="about">
+                Experienced Prompt Engineer passionate about developing intelligent AI systems. Specializing in crafting effective prompts and optimizing human-AI interactions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Personal Information</h2>
+            <div class="grid-2">
+                <div class="info-badge">
+                    <i class="fas fa-calendar"></i>
+                    <span>17 Year</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-globe"></i>
+                    <span>Indonesia</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>Single</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-cat"></i>
+                    <span>Cat Lover</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-smile"></i>
+                    <span>Kindhearted</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-ban"></i>
+                    <span>Nolep</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Coding</span>
+                </div>
+                <div class="info-badge">
+                    <i class="fas fa-box"></i>
+                    <span>Empty</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">AI Interaction</span>
+                <span class="skill-tag">API Developer</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Website Scraping</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <h3><a href="https://api.siputzx.my.id/" target="_blank">Siputzx API</a></h3>
+                    <p>REST API for multi-purpose services</p>
+                </div>
+                <div class="project-item">
+                    <h3><a href="https://luminai.my.id/" target="_blank">LuminAI</a></h3>
+                    <p>AI-powered conversational assistant by blackboxai</p>
+                </div>
+                <div class="project-item">
+                    <h3><a href="https://ytdown.siputzx.my.id/" target="_blank">YouTube Downloader</a></h3>
+                    <p>Website to download YouTube videos and audio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

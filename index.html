@@ -68,6 +68,20 @@
             font-size: 0.85em;
             color: #9ca3af;
             font-weight: 400;
+            min-height: 20px;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 0.7s infinite;
+            color: #667eea;
+            font-weight: 400;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
         }
 
         .social-links {
@@ -364,13 +378,14 @@
             }
         }
     </style>
+    <script src="Wilykun_teks.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="profile-header">
-            <img src="https://avatars.githubusercontent.com/u/154863645?v=4" alt="I Putu Indrawan" class="profile-image">
-            <h1>I Putu Indrawan</h1>
-            <p class="title">Prompt Engineer</p>
+            <img src="https://avatars.githubusercontent.com/u/154863645?v=4" alt="Bang Wily kun" class="profile-image">
+            <h1>Bang Wily kun</h1>
+            <p class="title"><span id="typing-text"></span><span class="cursor">|</span></p>
             <div class="social-links">
                 <a href="mailto:your-email@example.com" target="_blank" title="Email">
                     <i class="fas fa-envelope"></i>
@@ -539,8 +554,40 @@
             console.log(`Background updated: ${isMobile ? 'Mobile' : 'Desktop'} - ${backgroundName}`);
         }
 
+        let typingIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = typingConfig.typingSpeed;
+
+        function typeWriter() {
+            const typingElement = document.getElementById('typing-text');
+            const currentText = typingTexts[typingIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = typingConfig.deletingSpeed;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = typingConfig.typingSpeed;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typingSpeed = typingConfig.pauseAfterTyping;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                typingIndex = (typingIndex + 1) % typingTexts.length;
+                typingSpeed = typingConfig.pauseBeforeTyping;
+            }
+
+            setTimeout(typeWriter, typingSpeed);
+        }
+
         updateDateTime();
         updateBackground();
+        typeWriter();
         
         setInterval(updateDateTime, 1000);
         setInterval(updateBackground, 60000);

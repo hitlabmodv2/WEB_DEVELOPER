@@ -15,14 +15,33 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: #0a0a0a;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             min-height: 100vh;
             padding: 15px;
             color: #e0e0e0;
+            position: relative;
+            transition: background-image 1s ease-in-out;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
 
         .container {
             max-width: 750px;
             margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
 
         .profile-header {
@@ -490,8 +509,28 @@
             document.getElementById('datetime').textContent = dateTimeString;
         }
 
+        function updateBackground() {
+            const now = new Date();
+            const hour = now.getHours();
+            let backgroundImage;
+
+            if (hour >= 5 && hour < 12) {
+                backgroundImage = 'backgrounds/morning.png';
+            } else if (hour >= 12 && hour < 17) {
+                backgroundImage = 'backgrounds/afternoon.png';
+            } else if (hour >= 17 && hour < 20) {
+                backgroundImage = 'backgrounds/evening.png';
+            } else {
+                backgroundImage = 'backgrounds/night.png';
+            }
+
+            document.body.style.backgroundImage = `url('${backgroundImage}')`;
+        }
+
         updateDateTime();
+        updateBackground();
         setInterval(updateDateTime, 1000);
+        setInterval(updateBackground, 60000);
     </script>
 </body>
 </html>

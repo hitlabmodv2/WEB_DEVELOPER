@@ -36,3 +36,6 @@ Website sudah berjalan otomatis dengan workflow yang sudah dikonfigurasi. Server
 ## Recent Changes
 - 2025-11-10: Website dibuat dengan desain yang sama seperti siputzx.my.id
 - 2025-11-10: Ditambahkan favicon custom dengan tema coding purple untuk tab browser
+- 2025-11-10: Dihapus fitur typing animation untuk performa lebih ringan
+- 2025-11-10: Background gambar dibuat lebih cerah (overlay dikurangi dari 50% ke 15%)
+- 2025-11-10: Footer text dibuat lebih jelas dengan warna putih dan background semi-transparan

@@ -16,7 +16,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: #0a0a0a;
             min-height: 100vh;
-            padding: 20px;
+            padding: 15px;
             color: #e0e0e0;
         }
 
@@ -27,58 +27,58 @@
 
         .profile-header {
             text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .profile-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #667eea;
             margin-bottom: 15px;
         }
 
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #667eea;
+            margin-bottom: 10px;
+        }
+
         h1 {
-            font-size: 1.8em;
+            font-size: 1.3em;
             color: #ffffff;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             font-weight: 600;
         }
 
         .title {
-            font-size: 1em;
+            font-size: 0.85em;
             color: #9ca3af;
             font-weight: 400;
         }
 
         .card {
             background: #1a1a1a;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         h2 {
-            font-size: 1.1em;
+            font-size: 0.95em;
             color: #ffffff;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: 600;
         }
 
         .online-identities {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
         }
 
         .online-identities a {
             background: #2d2d2d;
             color: #e0e0e0;
-            padding: 6px 14px;
-            border-radius: 6px;
+            padding: 5px 12px;
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 0.85em;
+            font-size: 0.75em;
             font-weight: 500;
             transition: background 0.2s ease;
         }
@@ -88,54 +88,54 @@
         }
 
         .about {
-            line-height: 1.6;
+            line-height: 1.5;
             color: #b0b0b0;
-            font-size: 0.9em;
+            font-size: 0.8em;
         }
 
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 8px;
         }
 
         .info-badge {
             background: #2d2d2d;
-            padding: 8px 12px;
-            border-radius: 6px;
+            padding: 6px 10px;
+            border-radius: 5px;
             color: #e0e0e0;
-            font-size: 0.85em;
+            font-size: 0.75em;
             font-weight: 400;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .info-badge i {
             color: #9ca3af;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
         }
 
         .skill-tag {
             background: #2d2d2d;
             color: #e0e0e0;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.85em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.75em;
             font-weight: 400;
         }
 
         .project-item {
             background: #2d2d2d;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
         }
 
         .project-item:last-child {
@@ -144,8 +144,8 @@
 
         .project-item h3 {
             color: #ffffff;
-            font-size: 0.95em;
-            margin-bottom: 5px;
+            font-size: 0.85em;
+            margin-bottom: 4px;
             font-weight: 600;
         }
 
@@ -160,26 +160,86 @@
 
         .project-item p {
             color: #9ca3af;
-            font-size: 0.85em;
+            font-size: 0.75em;
             line-height: 1.4;
         }
 
-        @media (max-width: 600px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #9ca3af;
+            font-size: 0.9em;
+            border-top: 1px solid #2d2d2d;
+        }
+
+        .footer .date-time {
+            font-weight: 500;
+            color: #e0e0e0;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
             }
 
-            .container {
-                padding: 0 10px;
+            .grid-layout {
+                grid-template-columns: 1fr;
+                gap: 12px;
             }
 
             h1 {
-                font-size: 1.5em;
+                font-size: 1.4em;
             }
 
             .profile-image {
-                width: 100px;
-                height: 100px;
+                width: 90px;
+                height: 90px;
+            }
+
+            .card {
+                padding: 16px;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+
+            .info-badge {
+                font-size: 0.8em;
+            }
+
+            .skill-tag {
+                font-size: 0.8em;
+            }
+
+            .online-identities a {
+                font-size: 0.8em;
+            }
+
+            .about {
+                font-size: 0.85em;
+            }
+
+            .project-item h3 {
+                font-size: 0.9em;
+            }
+
+            .project-item p {
+                font-size: 0.8em;
+            }
+
+            .footer {
+                font-size: 0.85em;
+                padding: 15px;
             }
         }
     </style>
@@ -203,81 +263,110 @@
             </div>
         </div>
 
-        <div class="card">
-            <h2>About</h2>
-            <p class="about">
-                Experienced Prompt Engineer passionate about developing intelligent AI systems. Specializing in crafting effective prompts and optimizing human-AI interactions.
-            </p>
-        </div>
+        <div class="grid-layout">
+            <div class="card">
+                <h2>About</h2>
+                <p class="about">
+                    Experienced Prompt Engineer passionate about developing intelligent AI systems. Specializing in crafting effective prompts and optimizing human-AI interactions.
+                </p>
+            </div>
 
-        <div class="card">
-            <h2>Personal Information</h2>
-            <div class="grid-2">
-                <div class="info-badge">
-                    <i class="fas fa-calendar"></i>
-                    <span>17 Year</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-globe"></i>
-                    <span>Indonesia</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-heart"></i>
-                    <span>Single</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-cat"></i>
-                    <span>Cat Lover</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-smile"></i>
-                    <span>Kindhearted</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-ban"></i>
-                    <span>Nolep</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-code"></i>
-                    <span>Coding</span>
-                </div>
-                <div class="info-badge">
-                    <i class="fas fa-box"></i>
-                    <span>Empty</span>
+            <div class="card">
+                <h2>Personal Information</h2>
+                <div class="grid-2">
+                    <div class="info-badge">
+                        <i class="fas fa-calendar"></i>
+                        <span>17 Year</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-globe"></i>
+                        <span>Indonesia</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Single</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-cat"></i>
+                        <span>Cat Lover</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-smile"></i>
+                        <span>Kindhearted</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-ban"></i>
+                        <span>Nolep</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Coding</span>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fas fa-box"></i>
+                        <span>Empty</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill-tag">Prompt Engineering</span>
-                <span class="skill-tag">AI Interaction</span>
-                <span class="skill-tag">API Developer</span>
-                <span class="skill-tag">Firebase</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">Website Scraping</span>
+        <div class="grid-layout">
+            <div class="card">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">AI Interaction</span>
+                    <span class="skill-tag">API Developer</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Website Scraping</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project-item">
+                        <h3><a href="https://api.siputzx.my.id/" target="_blank">Siputzx API</a></h3>
+                        <p>REST API for multi-purpose services</p>
+                    </div>
+                    <div class="project-item">
+                        <h3><a href="https://luminai.my.id/" target="_blank">LuminAI</a></h3>
+                        <p>AI-powered conversational assistant by blackboxai</p>
+                    </div>
+                    <div class="project-item">
+                        <h3><a href="https://ytdown.siputzx.my.id/" target="_blank">YouTube Downloader</a></h3>
+                        <p>Website to download YouTube videos and audio</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="card">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project-item">
-                    <h3><a href="https://api.siputzx.my.id/" target="_blank">Siputzx API</a></h3>
-                    <p>REST API for multi-purpose services</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://luminai.my.id/" target="_blank">LuminAI</a></h3>
-                    <p>AI-powered conversational assistant by blackboxai</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://ytdown.siputzx.my.id/" target="_blank">YouTube Downloader</a></h3>
-                    <p>Website to download YouTube videos and audio</p>
-                </div>
-            </div>
+        <div class="footer">
+            <div>© 2025 Wilykun. All Rights Reserved.</div>
+            <div class="date-time" id="datetime"></div>
         </div>
     </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            const dateTimeString = now.toLocaleDateString('id-ID', options);
+            document.getElementById('datetime').textContent = dateTimeString;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
 </body>
 </html>

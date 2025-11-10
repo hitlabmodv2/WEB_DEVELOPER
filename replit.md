@@ -27,11 +27,12 @@ Website portfolio sederhana yang menampilkan profil I Putu Indrawan (Prompt Engi
 Website sudah berjalan otomatis dengan workflow yang sudah dikonfigurasi. Server berjalan di port 5000.
 
 ## Desain
-- Background: Purple gradient
-- Layout: Card putih dengan border-radius
+- Background: Dynamic time-based images (morning, afternoon, evening, night)
+- Layout: Glassmorphism cards with blur effect
 - Responsive design untuk mobile dan desktop
-- Animasi fade-in dan hover effects
+- Animasi hover effects
 - Color scheme: Purple (#667eea, #764ba2)
+- Frosted glass effect dengan backdrop-filter blur
 
 ## Recent Changes
 - 2025-11-10: Website dibuat dengan desain yang sama seperti siputzx.my.id
@@ -39,3 +40,4 @@ Website sudah berjalan otomatis dengan workflow yang sudah dikonfigurasi. Server
 - 2025-11-10: Dihapus fitur typing animation untuk performa lebih ringan
 - 2025-11-10: Background gambar dibuat lebih cerah (overlay dikurangi dari 50% ke 15%)
 - 2025-11-10: Footer text dibuat lebih jelas dengan warna putih dan background semi-transparan
+- 2025-11-10: Ditambahkan glassmorphism/frosted glass effect pada semua card dengan backdrop-filter blur

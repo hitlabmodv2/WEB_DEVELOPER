@@ -40,4 +40,4 @@ Website sudah berjalan otomatis dengan workflow yang sudah dikonfigurasi. Server
 - 2025-11-10: Dihapus fitur typing animation untuk performa lebih ringan
 - 2025-11-10: Background gambar dibuat lebih cerah (overlay dikurangi dari 50% ke 15%)
 - 2025-11-10: Footer text dibuat lebih jelas dengan warna putih dan background semi-transparan
-- 2025-11-10: Ditambahkan glassmorphism/frosted glass effect pada semua card dengan backdrop-filter blur
+- 2025-11-10: Optimasi performa scroll - dihapus semua blur effect dan fixed background untuk scrolling yang super smooth

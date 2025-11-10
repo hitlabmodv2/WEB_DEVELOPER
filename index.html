@@ -147,6 +147,20 @@
             border-radius: 5px;
             font-size: 0.75em;
             font-weight: 400;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background: #3d3d3d;
+            transform: translateY(-2px);
+        }
+
+        .skill-tag i {
+            font-size: 0.9em;
+            color: #667eea;
         }
 
         .project-item {
@@ -346,13 +360,22 @@
             <div class="card">
                 <h2>Skills</h2>
                 <div class="skills">
-                    <span class="skill-tag">Prompt Engineering</span>
-                    <span class="skill-tag">AI Interaction</span>
-                    <span class="skill-tag">API Developer</span>
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">Website Scraping</span>
+                    <span class="skill-tag"><i class="fas fa-brain"></i>Prompt Engineering</span>
+                    <span class="skill-tag"><i class="fas fa-robot"></i>AI Interaction</span>
+                    <span class="skill-tag"><i class="fas fa-code"></i>API Developer</span>
+                    <span class="skill-tag"><i class="fab fa-js"></i>JavaScript</span>
+                    <span class="skill-tag"><i class="fab fa-node"></i>Node.js</span>
+                    <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
+                    <span class="skill-tag"><i class="fas fa-fire"></i>Firebase</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i>MongoDB</span>
+                    <span class="skill-tag"><i class="fas fa-spider"></i>Website Scraping</span>
+                    <span class="skill-tag"><i class="fab fa-react"></i>React</span>
+                    <span class="skill-tag"><i class="fas fa-server"></i>REST API</span>
+                    <span class="skill-tag"><i class="fab fa-git-alt"></i>Git</span>
+                    <span class="skill-tag"><i class="fas fa-cloud"></i>Cloud Services</span>
+                    <span class="skill-tag"><i class="fas fa-terminal"></i>Linux/Bash</span>
+                    <span class="skill-tag"><i class="fas fa-network-wired"></i>Web Development</span>
+                    <span class="skill-tag"><i class="fas fa-project-diagram"></i>System Design</span>
                 </div>
             </div>
 
